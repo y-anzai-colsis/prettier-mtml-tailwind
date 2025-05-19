@@ -1,12 +1,13 @@
 {
-  "name": "prettier-mtml",
+  "name": "@y-anzai-colsis/prettier-mtml-tailwind",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
-  "author": "",
+  "author": "y-anzai-colsis",
   "type": "module",
   "main": "./dist/index.js",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "tsx build.ts",
     "format": "npm run build && prettier \"./test/**/*.mtml\" --write --plugin=./dist/index.js"
   },
@@ -18,5 +19,9 @@
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tsx": "^4.19.4"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "@y-anzai-colsis:registry": "https://npm.pkg.github.com"
   }
 }
