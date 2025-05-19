@@ -1,11 +1,14 @@
 {
   "name": "@y-anzai-colsis/prettier-mtml-tailwind",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "license": "ISC",
   "author": "y-anzai-colsis",
   "type": "module",
   "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "tsx build.ts",
