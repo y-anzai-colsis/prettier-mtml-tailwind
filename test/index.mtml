@@ -1,0 +1,38 @@
+<mt:If name="test">aaa<mt:Else>bbb</mt:If>
+
+<div>
+  <mt:If name="test">
+    <img src="test" />
+    <mt:Else>
+    <img src="test2" />
+  </mt:If>
+</div>
+
+<div <mt:If name="test">aaa<mt:Else>ccc</mt:If> class="test" <mt:If name="test">bbb</mt:If>>test
+</div>
+<div <mt:If name="test">aaa<mt:Else>ccc<mt:If name="test">bbb</mt:If></mt:If> class="test" <mt:If name="test">bbb</mt:If>>test</div>
+<div <mt:If name="test"> aaa<mt:Else> ccc<mt:If name="test">bbb</mt:If></mt:If> class="test" <mt:If name="test">bbb</mt:If>>test</div>
+<div <mt:If name="test">aaa</mt:If>>test</div>
+<p <mt:If name="test">aaa</mt:If>>test</p>
+<p target="_blank" class="<mt:If name="test">aaa</mt:If>">test</p>
+<img src="<mt:Var name="test">">
+<img src="<mt:Var name="test">" />
+<img src="<mt:Var name="test">" alt=">>>>" />
+<img src="<mt:Var name="test">" alt="<<<<<" />
+<img src="<mt:Var name="test">" alt="<><><>" />
+
+<div>
+  <div class="test ml-auto mt-0 block pb-0">
+    <p class="rounded-[5px] text-[30px]"> </p>
+    <p className='rounded-[5px] text-[30px]    '> </p>
+    <p class='rounded-[5px] text-[30px]'> </p>
+    <p value='rounded-[5px] text-center text-[30px]'> </p>
+    <p value='rounded-[5px] text-[30px]    <mt:>'> </p>
+    <p value='rounded-[5px] text-[30px]    <$mt:>'> </p>
+  </div>
+</div>
+
+<mt:SetVars>
+  test=<mt:BlogTemplateSetID>
+  test2=<mt:BlogTemplateSetID>
+</mt:SetVars>

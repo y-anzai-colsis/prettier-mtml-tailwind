@@ -1,0 +1,22 @@
+{
+  "name": "prettier-mtml",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsx build.ts",
+    "format": "npm run build && prettier \"./test/**/*.mtml\" --write --plugin=./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.15.19",
+    "esbuild": "^0.25.4",
+    "fs-extra": "^11.3.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tsx": "^4.19.4"
+  }
+}
