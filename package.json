@@ -1,6 +1,6 @@
 {
   "name": "@y-anzai-colsis/prettier-mtml-tailwind",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "license": "MIT",
   "author": "y-anzai-colsis",
@@ -24,7 +24,7 @@
     "tsx": "^4.19.4"
   },
   "publishConfig": {
-    "access": "restricted",
+    "access": "public",
     "@y-anzai-colsis:registry": "https://npm.pkg.github.com"
   }
 }
