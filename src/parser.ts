@@ -21,7 +21,7 @@ export const parse = async (
         const original = match[0];
         const value = match[3] || match[5];
 
-        if (!/<\$?mt:/i.test(value)) {
+        if (!/<\$?mt:?/i.test(value)) {
           const fixedValue = (await format(
             `<div class="${value}"></div>`,
             {
