@@ -1,8 +1,3 @@
-install
-```
-npm i github:y-anzai-colsis/prettier-mtml-tailwind -D
-```
-
 mtmlファイルでtailwindのソートをprettierのプラグインとして実行するプラグインです。
 
 * mtmlファイルの整形は行いません。
